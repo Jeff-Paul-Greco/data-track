@@ -1,32 +1,29 @@
-// import React from 'react';
-import './App.css';
-
-import React, { Component } from "react";
+import React from "react";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import API from "./utils/API";
 
 
-class App extends Component {
+function App() {
 
-  handleFormSubmit = event => {
-    event.preventDefault();
+  return (
+    
+      <Router>
 
-    let testStudent = {
-      name: "dude",
-      studentId: "hdhd76ehf5"
-    }
+        <div>
 
-    API.saveStudent(testStudent)
-            .then(res => alert("student added!"))
-            .catch(err => console.log(err))
-  };
+          <Switch>
 
-  render() {
-    return (
-      <div className="App">
-       <button onClick={this.handleFormSubmit}>Test</button>
-      </div>
-    );
-  }
-}
+            {/* <Route exact path="/" component={Home} />
+            <Route component={NoMatch} /> */}
+
+          </Switch>
+
+        </div>
+
+      </Router>
+    
+  );
+
+};
 
 export default App;
