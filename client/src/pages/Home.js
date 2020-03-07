@@ -2,8 +2,7 @@ import React, { Component } from "react";
 import Jumbotron from "../components/Jumbotron";
 import Nav from "../components/Nav";
 import { Col, Row, Container } from "../components/Grid";
-import SaveResults from "../components/Save";
-import API from "../utils/API";
+// import API from "../utils/API";
 
 class Home extends Component {
 
@@ -23,7 +22,7 @@ class Home extends Component {
 
                             <Jumbotron>
                                 <h1>Test Homepage</h1>
-                                <h3>Search for and Save Books</h3>
+                                <h3>placeholder text </h3>
                             </Jumbotron>
 
                         </Col>
@@ -44,4 +43,4 @@ class Home extends Component {
     }
 }
 
-export default Save;
+export default Home;
