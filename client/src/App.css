@@ -1,0 +1,8 @@
+body {
+    background-color: blue;
+}
+
+footer {
+    z-index: 100;
+    background-color: black;
+}

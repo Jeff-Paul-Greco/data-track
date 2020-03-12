@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Jumbotron from "../components/Jumbotron";
 import Nav from "../components/Nav";
+import Footer from "../components/Footer";
 import { Col, Row, Container } from "../components/Grid";
 // import API from "../utils/API";
 
@@ -37,6 +38,7 @@ class Home extends Component {
 
                 </Container>
 
+                <Footer />
             </div>
 
         );
